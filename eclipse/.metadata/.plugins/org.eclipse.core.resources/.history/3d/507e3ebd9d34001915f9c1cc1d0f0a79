@@ -1,0 +1,16 @@
+package aydenmitchell.pebblemod.items;
+
+import aydenmitchell.pebblemod.util.IHasModel;
+import net.minecraft.item.Item;
+
+public class ItemBase extends Item implements IHasModel {
+
+	public ItemBase(String name) {
+		
+	}
+	@Override
+	public void Models() {
+		
+	}
+
+}

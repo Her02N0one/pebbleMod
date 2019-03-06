@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ 
+    "pattern":
+    [
+        "HHH",
+        "HHH",
+        "HHH"
+    ],
+    
+    "key":
+    {
+        "H":
+        {
+            "item": "pebbles:handful_pebble"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:cobblestone",
+        "count": 1
+    }
+}

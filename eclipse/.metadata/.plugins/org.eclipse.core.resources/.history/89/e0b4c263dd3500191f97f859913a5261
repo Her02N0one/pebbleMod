@@ -1,0 +1,46 @@
+package aydenmitchell.pebblemod.blocks;
+
+import aydenmitchell.pebblemod.Main;
+import aydenmitchell.pebblemod.init.ModBlocks;
+import aydenmitchell.pebblemod.init.ModItems;
+import aydenmitchell.pebblemod.util.IHasModel;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.PropertyInteger;
+import net.minecraft.block.state.BlockStateContainer;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
+
+public class BlockBoulder extends Block implements IHasModel{
+	
+	public BlockBoulder(String name, Material material)
+	{
+		super(material);
+		
+		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
+		this.setHardness(3.0F);
+		this.setResistance(5.0F);
+		this.setLightLevel(0.2F);
+		this.setHarvestLevel("pickaxe", 0);
+		this.setCreativeTab(CreativeTabs.DECORATIONS);
+		
+		ModBlocks.BLOCKS.add(this);
+		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+	}
+	@Override
+	public void registerModels() {
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+		
+	}
+	@Override
+	public boolean isFullCube(IBlockState state) {
+		return false;
+	}
+	@Override
+	public boolean isOpaqueCube(IBlockState state) {
+		return false;
+	}
+}

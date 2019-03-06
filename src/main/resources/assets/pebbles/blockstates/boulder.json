@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "pebbles:boulder", "y": 180},
+        "facing=east": { "model": "pebbles:boulder", "y": 270 },
+        "facing=south": { "model": "pebbles:boulder", "y": 0 },
+        "facing=west": { "model": "pebbles:boulder", "y": 90 }
+    }
+}

@@ -1,0 +1,5 @@
+package aydenmitchell.pebblemod.util;
+
+public interface IHasModel {
+	public void registerModels();
+}

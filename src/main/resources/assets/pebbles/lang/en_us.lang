@@ -1,0 +1,9 @@
+
+//Items
+item.pebble.name=Pebble
+item.handful_pebble.name=Handful of Pebbles
+
+
+//Blocks
+tile.boulder.name=Boulder
+tile.pebble_ore.name=Pebble ore

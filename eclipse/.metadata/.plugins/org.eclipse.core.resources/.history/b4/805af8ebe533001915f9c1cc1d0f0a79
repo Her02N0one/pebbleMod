@@ -1,0 +1,16 @@
+package aydenmitchell.pebblemod;
+
+import aydenmitchell.pebblemod.util.Reference;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.Instance;
+
+@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
+public class Main {
+	
+	@Instance
+	public static Main instance;
+	
+	@SidedProxy()
+	
+	
+}

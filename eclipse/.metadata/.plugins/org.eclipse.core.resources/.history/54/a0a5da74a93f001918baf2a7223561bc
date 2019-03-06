@@ -1,0 +1,5 @@
+package aydenmitchell.pebblemod.world;
+
+public class BoulderDecorator implements ILandDecorator{
+
+}
