@@ -1,9 +1,9 @@
 /assets/forge/
 /build
 /bin
-/gradle.properties
 .idea
 .gradle
+/gradle
 .classpath
 .project
 .settings/org.eclipse.jdt.core.prefs
