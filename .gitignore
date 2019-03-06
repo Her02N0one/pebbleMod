@@ -1,1 +1,7 @@
-*.txt
+.DS_Store
+*.log
+.DS_Store
+gradle/wrapper/gradle-wrapper.jar
+*.zip
+.DS_Store
+*.snap
