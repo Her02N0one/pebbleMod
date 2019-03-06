@@ -13,5 +13,6 @@
 *.launch
 /run
 /out
+/bin
 *.iml
 /.settings
