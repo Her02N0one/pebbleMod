@@ -1,15 +1,2 @@
-<<<<<<< Updated upstream
-=======
 *.txt
->>>>>>> Stashed changes
-.DS_Store
-*.log
-.DS_Store
-gradle/wrapper/gradle-wrapper.jar
-*.zip
-.DS_Store
-*.snap
-<<<<<<< Updated upstream
-=======
-bin/aydenmitchell/pebblemod/blocks/BlockBase.class
->>>>>>> Stashed changes
+/run
