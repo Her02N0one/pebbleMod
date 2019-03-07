@@ -1,5 +1,4 @@
-<<<<<<< HEAD
 *.txt
 /run
-=======
->>>>>>> b85f2106e3a9d4d4a0a8a23c47b7230ad90a0cad
+*.DS_Store
+/bin
