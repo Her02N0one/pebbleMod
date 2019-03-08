@@ -1,8 +1,0 @@
-package assets.pebbles.textures.blocks;
-
-public class Snippet {
-	public static void main(String[] args) {
-		stone.png
-	}
-}
-
