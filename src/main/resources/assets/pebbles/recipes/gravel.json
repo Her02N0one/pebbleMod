@@ -1,1 +1,21 @@
-
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "pebbles:handful_pebble"
+        },
+			  {
+            "item": "pebbles:handful_pebble"
+        },
+        {
+            "item": "pebbles:handful_pebble"
+        },
+        {
+            "item": "pebbles:handful_pebble"
+        },			
+    ],
+    "result": {
+        "item": "minecraft:gravel",
+        "count": 1
+    }
+}
