@@ -11,4 +11,5 @@ public class ModItems {
 	
 	public static final Item PEBBLE = new ItemBase("pebble");
 	public static final Item HANDFUL_PEBBLE = new ItemBase("handful_pebble");
+	public static final Item FOSSIL = new ItemBase("fossil");
 }
