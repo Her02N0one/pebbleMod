@@ -37,8 +37,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-//Secret
-//more secrets
+
 public class BlockBoulder extends BlockHorizontal implements IHasModel{
 	
 	public BlockBoulder(String name, Material material)
