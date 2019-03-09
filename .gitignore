@@ -1,7 +1,4 @@
 test.txt
-/eclipse
-/eclipse/.metadata
-/.gradle
 /assets/forge/
 /download
 /build
@@ -11,8 +8,8 @@ test.txt
 .gradle
 .classpath
 .project
-.DS_Store
 .settings/org.eclipse.jdt.core.prefs
+/eclipse
 *~
 *.launch
 /run
