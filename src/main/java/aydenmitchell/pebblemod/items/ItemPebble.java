@@ -22,7 +22,6 @@ public class ItemPebble extends Item implements IHasModel{
 
 	public ItemPebble(String name) {
 		
-		this.maxStackSize = 16;
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
 		this.setCreativeTab(CreativeTabs.MATERIALS);
