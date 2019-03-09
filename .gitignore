@@ -1,5 +1,5 @@
 # Eclipse
-eclipse/
+/eclipse/
 .classpath
 .project
 .settings/
@@ -13,13 +13,14 @@ eclipse/
 .DS_Store
 
 # Maven
-log/
-target/
+/log/
+/target/
 
 # Gradle
 .gradle
 
 # Forge
-run/
-bin/
-build/
+/run/
+/bin/
+/build/
+.launch
