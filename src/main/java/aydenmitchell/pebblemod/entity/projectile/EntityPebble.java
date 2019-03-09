@@ -30,7 +30,7 @@ public class EntityPebble extends EntityThrowable
 
     public static void registerFixesPebble(DataFixer fixer)
     {
-        EntityThrowable.registerFixesThrowable(fixer, "pebble");
+        EntityThrowable.registerFixesThrowable(fixer, "Pebble");
     }
 
     /**
