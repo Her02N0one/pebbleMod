@@ -1,18 +1,27 @@
-/eclipse
-/.gradle
-/assets/forge/
-/download
-/build
-/bin
-/gradle.properties
-.idea
-.gradle
+# Eclipse
+/eclipse/
 .classpath
 .project
-.settings/org.eclipse.jdt.core.prefs
-*~
-*.launch
-/run
-/out
+.settings/
+
+# Intellij
+.idea/
 *.iml
-/.settings
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+/log/
+/target/
+
+# Gradle
+.gradle
+
+# Forge
+/run/
+/bin/
+/build/
+*.launch
+*.txt
