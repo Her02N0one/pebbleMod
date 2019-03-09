@@ -1,11 +1,12 @@
 # Eclipse
-/eclipse/
+/eclipse
 .classpath
 .project
-.settings/
+/.settings
+*~
 
 # Intellij
-.idea/
+.idea
 *.iml
 *.iws
 
@@ -18,9 +19,13 @@
 
 # Gradle
 .gradle
+/gradle.properties
 
 # Forge
-/run/
-/bin/
-/build/
-.launch
+/run
+/bin
+/build
+*.launch
+/out
+/download
+/assets/forge/
