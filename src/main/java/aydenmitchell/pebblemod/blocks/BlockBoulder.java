@@ -10,6 +10,7 @@ import aydenmitchell.pebblemod.init.ModBlocks;
 import aydenmitchell.pebblemod.init.ModItems;
 import aydenmitchell.pebblemod.util.IHasModel;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockBush;
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.BlockHorizontal;
@@ -38,7 +39,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockBoulder extends BlockHorizontal implements IHasModel{
+public class BlockBoulder extends BlockBush implements IHasModel{
+	
+	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 	
 	public BlockBoulder(String name, Material material)
 	{

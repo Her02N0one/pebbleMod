@@ -1,5 +1,7 @@
 package aydenmitchell.pebblemod.entity.projectile;
 
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntityBlaze;
 import net.minecraft.entity.projectile.EntityThrowable;
@@ -56,6 +58,7 @@ public class EntityPebble extends EntityThrowable
         if (result.entityHit != null)
         {
             int i = 1;
+
 
             result.entityHit.attackEntityFrom(DamageSource.causeThrownDamage(this, this.getThrower()), (float)i);
         }
