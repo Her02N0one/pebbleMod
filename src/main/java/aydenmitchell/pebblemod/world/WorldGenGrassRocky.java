@@ -18,7 +18,6 @@ package aydenmitchell.pebblemod.world;
 import java.util.Random;
 
 import aydenmitchell.pebblemod.init.ModBlocks;
-
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
@@ -28,7 +27,7 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 // TODO: Auto-generated Javadoc
 public class WorldGenGrassRocky extends WorldGenerator
 {
-    private BlockBush grassBlock = ModBlocks.PEBBLE_GRASS;
+    private BlockBush grassBlock = (BlockBush) ModBlocks.PEBBLE_GRASS;
     
     /**
      * Instantiates a new world gen grass cloud.

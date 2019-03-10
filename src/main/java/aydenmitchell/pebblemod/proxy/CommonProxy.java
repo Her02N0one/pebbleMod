@@ -1,5 +1,6 @@
 package aydenmitchell.pebblemod.proxy;
 
+import aydenmitchell.pebblemod.blocks.BlockPebbleLeaves;
 import net.minecraft.item.Item;
 
 public class CommonProxy {
@@ -20,4 +21,10 @@ public class CommonProxy {
 	{
 		
 	}
+	
+    public void setGraphicsLevel(BlockPebbleLeaves parBlock, boolean parFancyEnabled)
+    {
+        parBlock.setGraphicsLevel(parFancyEnabled);
+    }
+
 }

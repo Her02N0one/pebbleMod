@@ -27,7 +27,7 @@ public class WorldGenFlowersRocky extends WorldGenerator
     @Override
     public boolean generate(World worldIn, Random rand, BlockPos position)
     {
-        BlockBush flower = ModBlocks.STONE_FLOWER;
+        BlockBush flower = (BlockBush) ModBlocks.STONE_FLOWER;
         
         for (int i = 0; i < 64; ++i)
         {

@@ -6,6 +6,7 @@ import javax.annotation.Nullable;
 
 import aydenmitchell.pebblemod.blocks.BlockBoulder;
 import aydenmitchell.pebblemod.init.ModBlocks;
+import aydenmitchell.pebblemod.world.structures.villages.VillageHouseRockyCreationHandler;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.block.state.IBlockState;
@@ -28,7 +29,7 @@ public class ModWorldGen implements IWorldGenerator{
     public static final int ROCKY_DIM_ID = findFreeDimensionID();
     public static final DimensionType ROCKY_DIM_TYPE = DimensionType.register(ROCKY_NAME, "_"+ROCKY_NAME, ROCKY_DIM_ID, WorldProviderRocky.class, true);
     public static final WorldType ROCKY_WORLD_TYPE = new WorldTypeRocky(); // although instance isn't used, must create the instance to register the WorldType
-    public static final IVillageCreationHandler ROCKY_VILLAGE_HANDLER = new VillageHouseCloudCreationHandler();
+    public static final IVillageCreationHandler ROCKY_VILLAGE_HANDLER = new VillageHouseRockyCreationHandler();
     
     /**
      * Register dimensions.

@@ -7,6 +7,7 @@ import javax.annotation.Nullable;
 
 import aydenmitchell.pebblemod.init.ModBiomes;
 import aydenmitchell.pebblemod.init.ModBlocks;
+import aydenmitchell.pebblemod.world.structures.villages.MapGenVillageRocky;
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EnumCreatureType;

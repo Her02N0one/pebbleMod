@@ -1,0 +1,9 @@
+{
+    "forge_marker": 1,
+    "variants": {
+        "axis=y":  { "model": "pebbles:stone_log" },
+        "axis=z":   { "model": "pebbles:stone_log", "x": 90 },
+        "axis=x":   { "model": "pebbles:stone_log", "x": 90, "y": 90 },
+        "axis=none": { "model": "pebbles:stone_log" }
+    }
+}

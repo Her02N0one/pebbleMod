@@ -5,54 +5,34 @@ import aydenmitchell.pebblemod.world.BiomeRocky;
 import aydenmitchell.pebblemod.world.ModWorldGen;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
+import net.minecraftforge.common.BiomeDictionary.Type;
 import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.common.BiomeManager.BiomeEntry;
 import net.minecraftforge.common.BiomeManager.BiomeType;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.terraingen.WorldTypeEvent.InitBiomeGens;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 import net.minecraftforge.registries.IForgeRegistry;
 
-@ObjectHolder(Reference.MOD_ID)
-public class ModBiomes
-{
-    // instantiate Biomes
-    public final static BiomeRocky rocky = null;
+public class ModBiomes{
+	
+	public static final Biome ROCKY = new BiomeRocky();
+	
+	public static void registerBiomes()
+	{
+		ModBiomes(ROCKY, "rocky", BiomeType.WARM, Type.HILLS);
+	}
 
-    @Mod.EventBusSubscriber(modid = Reference.MOD_ID)
-    public static class RegistrationHandler
-    {
-        /**
-         * Register this mod's {@link Biome}s.
-         *
-         * @param event The event
-         */
-        @SubscribeEvent
-        public static void onEvent(final RegistryEvent.Register<Biome> event)
-        {
-            final IForgeRegistry<Biome> registry = event.getRegistry();
-
-            System.out.println("Registering biomes");
-            
-            registry.register(new BiomeRocky().setRegistryName(Reference.MOD_ID, ModWorldGen.ROCKY_NAME));
-        }
-    }
-    
-    /**
-     * This method should be called during the "init" FML lifecycle 
-     * because it must happen after object handler injection.
-     */
-    public static void initBiomeManagerAndDictionary()
-    {
-        BiomeManager.addBiome(BiomeType.COOL, new BiomeEntry(rocky, 10));
-        BiomeManager.addSpawnBiome(rocky);
-        BiomeManager.addStrongholdBiome(rocky);
-        BiomeManager.addVillageBiome(rocky, true);
-        BiomeDictionary.addTypes(rocky, 
-                BiomeDictionary.Type.COLD,
-                BiomeDictionary.Type.DRY,
-                BiomeDictionary.Type.MAGICAL
-                );
-    }
+	private static Biome iniBiome(Biome biome, String name, BiomeType biomeType, Type... types) {
+		
+		biome.setRegistryName(name);
+		ForgeRegistries.BIOMES.register(biome);
+		BiomeDictionary.addTypes(biome, types);
+		BiomeManager.addBiome(biomeType, new BiomeEntry(biome, 10));
+		BiomeManager.addSpawnBiome(biome);
+		return biome;
+	}
 }
