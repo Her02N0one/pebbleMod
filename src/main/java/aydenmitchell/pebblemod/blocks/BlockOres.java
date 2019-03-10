@@ -14,18 +14,18 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
-public class BlockPebbleOre extends Block implements IHasModel {
+public class BlockOres extends Block implements IHasModel {
 
-	public BlockPebbleOre(String name, Material material) {
+	public BlockOres(String name, String Dimension) {
 		
-		super(material);
+		super(Material.ROCK);
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
 		this.setSoundType(SoundType.STONE);
 		this.setHardness(3.0F);
 		this.setResistance(5.0F);
 		this.setHarvestLevel("pickaxe", 0);
-		this.setCreativeTab(CreativeTabs.DECORATIONS);
+		this.setCreativeTab(Main.pebbletab);
 
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

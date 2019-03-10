@@ -26,7 +26,7 @@ public class ItemPebble extends Item implements IHasModel{
 		
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
-		this.setCreativeTab(CreativeTabs.MATERIALS);
+		this.setCreativeTab(Main.pebbletab);
 		
 		ModItems.ITEMS.add(this);
 		

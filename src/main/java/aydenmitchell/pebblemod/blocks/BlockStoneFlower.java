@@ -24,8 +24,8 @@ public class BlockStoneFlower extends BlockBush implements IHasModel {
 		super(material);
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
-		this.setSoundType(SoundType.PLANT);
-		this.setCreativeTab(CreativeTabs.DECORATIONS);
+		this.setSoundType(SoundType.STONE);
+		this.setCreativeTab(Main.pebbletab);
 		
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

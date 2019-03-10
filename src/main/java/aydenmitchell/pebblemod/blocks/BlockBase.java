@@ -28,7 +28,7 @@ public class BlockBase extends Block implements IHasModel {
 		super(material);
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
-		this.setCreativeTab(CreativeTabs.DECORATIONS);
+		this.setCreativeTab(Main.pebbletab);
 
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

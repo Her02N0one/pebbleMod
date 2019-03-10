@@ -52,7 +52,7 @@ public class BlockBoulder extends BlockBush implements IHasModel{
 		this.setHardness(3.0F);
 		this.setResistance(5.0F);
 		this.setHarvestLevel("pickaxe", 0);
-		this.setCreativeTab(CreativeTabs.DECORATIONS);
+		this.setCreativeTab(Main.pebbletab);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.SOUTH));
 		
 		ModBlocks.BLOCKS.add(this);

@@ -1,9 +1,13 @@
+//Tab
+itemgroup.pebbletab.name=Pebble Mod
 
 //Items
 item.pebble.name=Pebble
 item.handful_pebble.name=Handful of Pebbles
+item.helmet_pebble.name=Pebble hat
 
 
 //Blocks
 tile.boulder.name=Boulder
 tile.pebble_ore.name=Pebble ore
+tile.stone_flower.name=Stone flower
