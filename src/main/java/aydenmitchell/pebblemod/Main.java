@@ -2,14 +2,14 @@ package aydenmitchell.pebblemod;
 
 import javax.swing.text.Utilities;
 
-import aydenmitchell.pebblemod.init.ModBiomes;
+//import aydenmitchell.pebblemod.init.ModBiomes;
 import aydenmitchell.pebblemod.init.ModProfessions;
 import aydenmitchell.pebblemod.init.ModRecipes;
 import aydenmitchell.pebblemod.proxy.CommonProxy;
 import aydenmitchell.pebblemod.util.Reference;
 import aydenmitchell.pebblemod.world.ModWorldGen;
-import aydenmitchell.pebblemod.world.structures.villages.MapGenVillageRocky;
-import aydenmitchell.pebblemod.world.structures.villages.VillageHouseRocky;
+//import aydenmitchell.pebblemod.world.structures.villages.MapGenVillageRocky;
+//import aydenmitchell.pebblemod.world.structures.villages.VillageHouseRocky;
 import net.minecraft.world.gen.structure.MapGenStructureIO;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;

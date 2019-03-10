@@ -2,7 +2,6 @@ package aydenmitchell.pebblemod.proxy;
 
 import com.ibm.icu.impl.ICUService.Factory;
 
-import aydenmitchell.pebblemod.blocks.BlockPebbleLeaves;
 import aydenmitchell.pebblemod.entity.projectile.EntityPebble;
 import aydenmitchell.pebblemod.entity.projectile.RenderPebble;
 import aydenmitchell.pebblemod.init.ModItems;
@@ -22,10 +21,4 @@ public class ClientProxy extends CommonProxy {
 	public void registerItemRenderer(Item item, int meta, String id) {
 		ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));
 	}
-	
-    @Override
-    public void setGraphicsLevel(BlockPebbleLeaves parBlock, boolean parFancyEnabled)
-    {
-        parBlock.setGraphicsLevel(parFancyEnabled);
-    }
 }
