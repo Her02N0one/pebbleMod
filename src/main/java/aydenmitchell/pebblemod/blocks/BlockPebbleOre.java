@@ -14,11 +14,15 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
-public class BlockOres extends Block implements IHasModel {
+public class BlockPebbleOre extends Block implements IHasModel
+{
 
-	public BlockOres(String name, String Dimension) {
+	private String name, Dimenion;
+	
+	public BlockPebbleOre(String name, Material material)
+	{
 		
-		super(Material.ROCK);
+		super(material);
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
 		this.setSoundType(SoundType.STONE);
@@ -37,16 +41,19 @@ public class BlockOres extends Block implements IHasModel {
 		
 	}
 	@Override
-	public boolean isFullCube(IBlockState state) {
+	public boolean isFullCube(IBlockState state)
+	{
 		return false;
 	}
 	@Override
-	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
+	public Item getItemDropped(IBlockState state, Random rand, int fortune)
+	{
 		return ModItems.PEBBLE;
 	}
 	
 	@Override
-	public int quantityDropped(Random random) {
+	public int quantityDropped(Random random)
+	{
 		return random.nextInt(4) + 1;
 	}
 }
