@@ -1,3 +1,6 @@
+package aydenmitchell.pebblemod.items;
+
+import aydenmitchell.pebblemod.Main;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
