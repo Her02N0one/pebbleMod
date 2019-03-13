@@ -17,9 +17,20 @@ out
 build
 .gradle
 
+<<<<<<< HEAD
 # other
 eclipse
 run
 
 # forge
+=======
+# Forge
+/run
+/bin
+/build
+*.launch
+/out
+/download
+/assets/forge/
+>>>>>>> 6aaf6cc3f0984d944e23e13dfe2b51faba000276
 forge*/
