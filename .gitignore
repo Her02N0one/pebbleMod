@@ -1,31 +1,25 @@
-# Eclipse
-/eclipse
+# eclipse
+bin
+*.launch
+.settings
+.metadata
 .classpath
 .project
-/.settings
-*~
 
-# Intellij
-.idea
-*.iml
+# idea
+out
+*.ipr
 *.iws
+*.iml
+.idea
 
-# Mac
-*.DS_Store
-
-# Maven
-/log/
-/target/
-
-# Gradle
+# gradle
+build
 .gradle
-/gradle.properties
 
-# Forge
-/run
-/bin
-/build
-*.launch
-/out
-/download
-/assets/forge/
+# other
+eclipse
+run
+
+# forge
+forge*/
