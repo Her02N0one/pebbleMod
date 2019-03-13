@@ -23,6 +23,7 @@ public class ModItems {
 	public static final Item PEBBLE = new ItemPebble("pebble");
 	public static final Item HANDFUL_PEBBLE = new ItemBase("handful_pebble");
 	public static final Item FOSSIL = new ItemBase("fossil");
+//	test item lol
 	
 	//Armor
 	public static final Item HELMET_PEBBLE = new ArmorBase("helmet_pebble", TOOL_PEBBLE, 1, EntityEquipmentSlot.HEAD);
