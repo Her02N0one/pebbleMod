@@ -25,6 +25,7 @@ public class ModItems {
 	public static final Item PEBBLE = new ItemPebble("pebble");
 	public static final Item HANDFUL_PEBBLE = new ItemBase("handful_pebble");
 	public static final Item FOSSIL = new ItemBase("fossil");
+	public static final Item SPRITE_CRANNBERRY = new ItemBase("sprite_crannberry");
 	
 	
 	//Armor
