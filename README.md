@@ -1,5 +1,4 @@
-![GitHub Logo](/textures/items/pebble.png)
-Format: ![Alt Text](url)
+![Pebble Mod](/textures/items/pebble.png)
 # Pebble Mod
 
 * Discord Server: 
