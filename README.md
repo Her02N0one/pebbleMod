@@ -16,3 +16,10 @@ Other Links
 ============
 
 * Todo list: 
+
+Websites that we use
+====================
+
+* piskel[http://piskelapp.com]
+* nova skin[https://minecraft.novaskin.me/resourcepacks]
+
