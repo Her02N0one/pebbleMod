@@ -1,4 +1,3 @@
-![Pebble Mod](https://github.com/Her02N0one/pebbleMod/blob/master/src/main/resources/assets/pebbles/textures/items/pebble.png)
 # Pebble Mod
 
 * Discord Server: 
@@ -21,6 +20,6 @@ Other Links
 Websites that we use
 ====================
 
-* http://piskelapp.com[piskel]
-* nova skin[https://minecraft.novaskin.me/resourcepacks]
+* [piskel](http://piskelapp.com)
+* [nova skin](https://minecraft.novaskin.me/resourcepacks)
 
