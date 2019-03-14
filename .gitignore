@@ -33,4 +33,4 @@ run
 /download
 /assets/forge/
 forge*/
-*.txt
+*.txt/
