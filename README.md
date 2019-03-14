@@ -20,6 +20,6 @@ Other Links
 Websites that we use
 ====================
 
-* piskel[http://piskelapp.com]
+* http://piskelapp.com[piskel]
 * nova skin[https://minecraft.novaskin.me/resourcepacks]
 
