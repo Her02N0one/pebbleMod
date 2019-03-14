@@ -16,6 +16,7 @@ out
 # gradle
 build
 .gradle
+*.gradle
 
 # other
 eclipse
@@ -33,7 +34,5 @@ run
 /download
 /assets/forge/
 forge*/
-<<<<<<< HEAD
 *.txt/
-=======
->>>>>>> parent of 8f8204a... stuff
+forge-1.12.2-14.23.5.2811-changelog.txt
