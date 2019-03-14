@@ -20,16 +20,3 @@ build
 # other
 eclipse
 run
-
-# Mac
-.DS_Store
-
-# Forge
-/run
-/bin
-/build
-*.launch
-/out
-/download
-/assets/forge/
-forge*/

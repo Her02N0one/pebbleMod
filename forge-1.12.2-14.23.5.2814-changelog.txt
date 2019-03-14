@@ -1,4 +1,19 @@
 Changelog:
+Build 2814:
+	bs2609: Fix small logic error in ItemTextureQuadConverter (#5463)
+
+Build 2813:
+	bs2609: Better support for custom bows (#5209)
+
+Build 2812:
+	CovertJaguar: Remove FluidStack amount from hashcode calculation (#5272)
+	molecularphylo:
+		Fixed incorrect string representation of string list config property
+		default values in their comments.
+	bs2609:
+		Improve tracking of used dimension IDs (#5249)
+		Closes #5378 Large dimension IDs bloat level.data
+
 Build 2811:
 	bs2609:
 		Fix up torch placement logic to handle more vanilla special-casing
