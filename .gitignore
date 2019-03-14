@@ -20,8 +20,6 @@ build
 # other
 eclipse
 run
-<<<<<<< HEAD
-=======
 
 # Mac
 .DS_Store
@@ -35,6 +33,4 @@ run
 /download
 /assets/forge/
 forge*/
-*.txt
->>>>>>> ddc7c5b5e6a660e83c718f251e60abba0d2322e2
-*.txt
+*.txt/
