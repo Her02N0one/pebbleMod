@@ -1,4 +1,4 @@
-![Pebble Mod](pebbleMod/src/main/resources/assets/pebbles/textures/items/pebble.png)
+![Pebble Mod](https://github.com/Her02N0one/pebbleMod/blob/master/src/main/resources/assets/pebbles/textures/items/pebble.png)
 # Pebble Mod
 
 * Discord Server: 
