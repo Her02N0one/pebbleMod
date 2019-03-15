@@ -1,6 +1,5 @@
 package aydenmitchell.pebblemod.items;
 
-import aydenmitchell.pebblemod.util.FoodStats;
 import aydenmitchell.pebblemod.Main;
 import aydenmitchell.pebblemod.init.ModItems;
 import aydenmitchell.pebblemod.util.IHasModel;
@@ -11,6 +10,7 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.stats.StatList;
@@ -20,7 +20,7 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
 
-public class ItemFood extends Item implements IHasModel {
+public class FoodBase extends ItemFood implements IHasModel {
 	
     /** Number of ticks to run while 'EnumAction'ing until result. */
     public final int itemUseDuration;
@@ -35,17 +35,10 @@ public class ItemFood extends Item implements IHasModel {
     private PotionEffect potionId;
     /** probably of the set potion effect occurring */
     private float potionEffectProbability;
-    /** The player's food level. */
-    private int foodLevel = 20;
-    /** The player's food saturation. */
-    private float foodSaturationLevel = 5.0F;
-    /** The player's food exhaustion. */
-    private float foodExhaustionLevel;
-    /** The player's food timer value. */
-    private int foodTimer;
-    private int prevFoodLevel = 20;
 
-	public ItemFood(int amount, float saturation, boolean isWolfFood) {
+	public FoodBase(int amount, float saturation, boolean isWolfFood) {
+		
+		super(amount, saturation, isWolfFood);
 		this.setUnlocalizedName("sprite_cranberry");
 		this.setRegistryName("sprite_cranberry");
         this.itemUseDuration = 32;
@@ -63,7 +56,7 @@ public class ItemFood extends Item implements IHasModel {
 		
 	}
 	
-	public ItemFood(int amount, boolean isWolfFood)
+	public FoodBase(int amount, boolean isWolfFood)
     {
         this(amount, 0.6F, isWolfFood);
     }
@@ -143,7 +136,7 @@ public class ItemFood extends Item implements IHasModel {
         return this.isWolfsFavoriteMeat;
     }
 
-    public ItemFood setPotionEffect(PotionEffect effect, float probability)
+    public FoodBase setPotionEffect(PotionEffect effect, float probability)
     {
         this.potionId = effect;
         this.potionEffectProbability = probability;
@@ -153,20 +146,9 @@ public class ItemFood extends Item implements IHasModel {
     /**
      * Set the field 'alwaysEdible' to true, and make the food edible even if the player don't need to eat.
      */
-    public ItemFood setAlwaysEdible()
+    public FoodBase setAlwaysEdible()
     {
         this.alwaysEdible = true;
         return this;
     }
-    public void addStats(int foodLevelIn, float foodSaturationModifier)
-    {
-        this.foodLevel = Math.min(foodLevelIn + this.foodLevel, 20);
-        this.foodSaturationLevel = Math.min(this.foodSaturationLevel + (float)foodLevelIn * foodSaturationModifier * 2.0F, (float)this.foodLevel);
-    }
-
-    public void addStats(ItemFood foodItem, ItemStack stack)
-    {
-        this.addStats(foodItem.getHealAmount(stack), foodItem.getSaturationModifier(stack));
-    }
-    
 }
