@@ -6,6 +6,7 @@ import aydenmitchell.pebblemod.util.IMetaName;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyEnum;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IStringSerializable;
 
@@ -36,6 +37,12 @@ public class BlockFossilOre extends Block implements IHasModel, IMetaName
 		super(material);
 		this.setCreativeTab(Main.pebbletab);
 		this.setUnlocalizedName(name);
+	}
+	
+	@Override
+	public void registerModels() {
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+		
 	}
 	
 	@Override

@@ -5,6 +5,7 @@ import java.util.List;
 
 import aydenmitchell.pebblemod.items.ArmorBase;
 import aydenmitchell.pebblemod.items.ItemBase;
+import aydenmitchell.pebblemod.items.ItemFood;
 import aydenmitchell.pebblemod.items.ItemPebble;
 import aydenmitchell.pebblemod.util.Reference;
 import net.minecraft.init.SoundEvents;
@@ -25,7 +26,7 @@ public class ModItems {
 	public static final Item PEBBLE = new ItemPebble("pebble");
 	public static final Item HANDFUL_PEBBLE = new ItemBase("handful_pebble");
 	public static final Item FOSSIL = new ItemBase("fossil");
-	public static final Item SPRITE_CRANNBERRY = new ItemBase("sprite_cranberry");
+	public static final Item SPRITE_CRANNBERRY = new ItemFood(5, 5, false);
 	
 	
 	//Armor
