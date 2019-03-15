@@ -3,6 +3,7 @@ package aydenmitchell.pebblemod.init;
 import java.util.ArrayList;
 import java.util.List;
 
+//import aydenmitchell.pebblemod.items.ToolBase;
 import aydenmitchell.pebblemod.items.ArmorBase;
 import aydenmitchell.pebblemod.items.ItemBase;
 import aydenmitchell.pebblemod.items.ItemFood;
@@ -33,5 +34,7 @@ public class ModItems {
 	public static final Item HELMET_PEBBLE = new ArmorBase("helmet_pebble", ARMOR_PEBBLE, 1, EntityEquipmentSlot.HEAD);
 	
 	//Weapons
-	
+	 
+	//Tools
+//	public static final Item PICK_SWORD = new ToolBase("pick_sword");
 }
