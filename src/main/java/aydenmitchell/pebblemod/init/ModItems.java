@@ -6,7 +6,7 @@ import java.util.List;
 //import aydenmitchell.pebblemod.items.ToolBase;
 import aydenmitchell.pebblemod.items.ArmorBase;
 import aydenmitchell.pebblemod.items.ItemBase;
-import aydenmitchell.pebblemod.items.ItemFood;
+import aydenmitchell.pebblemod.items.FoodBase;
 import aydenmitchell.pebblemod.items.ItemPebble;
 import aydenmitchell.pebblemod.util.Reference;
 import net.minecraft.init.SoundEvents;
@@ -21,13 +21,13 @@ public class ModItems {
 	
 	//Material
 	public static final ArmorMaterial ARMOR_PEBBLE = EnumHelper.addArmorMaterial("armor_pebble", Reference.MOD_ID + ":pebble", 6, new int[]{1, 2, 3, 1}, 15, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F);
-	public static final ToolMaterial TOOL_WEAPON = EnumHelper.addToolMaterial("tool_pebble", 1, 131, 4.0F, 1.0F, 5);
+	public static final ToolMaterial TOOL_PEBBLE = EnumHelper.addToolMaterial("tool_pebble", 1, 131, 4.0F, 1.0F, 5);
 	
 	//Items
 	public static final Item PEBBLE = new ItemPebble("pebble");
 	public static final Item HANDFUL_PEBBLE = new ItemBase("handful_pebble");
 	public static final Item FOSSIL = new ItemBase("fossil");
-	public static final Item SPRITE_CRANNBERRY = new ItemFood(5, 5, false);
+	public static final Item SPRITE_CRANNBERRY = new FoodBase(5, 5, false);
 	
 	
 	//Armor
