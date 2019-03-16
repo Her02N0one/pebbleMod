@@ -6,7 +6,8 @@ item.pebble.name=Pebble
 item.handful_pebble.name=Handful of Pebbles
 item.helmet_pebble.name=Pebble hat
 item.sprite_cranberry.name=Sprite Cranberry
-
+//Tools
+item.pick_sword.name=Pick Sword
 //Blocks
 tile.boulder.name=Boulder
 tile.pebble_ore.name=Pebble ore
