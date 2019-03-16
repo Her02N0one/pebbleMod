@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ 
+    "pattern":
+    [
+        " P ",
+        "PPP",
+        " / "
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "pebbles:pebble"
+        },
+        
+        "/":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "pebbles:pick_sword",
+        "count": 1
+    }
+}
+      
