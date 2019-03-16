@@ -1,21 +1,22 @@
 # Pebble Mod
 
-* Discord Server: 
-* Curseforge Page + Download: 
-* Wikia: 
-* Tumblr Development Blog: 
+* Discord Server: https://discord.gg/YBhTY5Q
+* Curseforge Page + Download: not up yet (still developing)
+* Tumblr Development Blog: (maybe later)
 
 
 Pebble mod is a mod that add pebbles and fossils to mincecraft
 
 We hope to implement:
 * Fossils that spawn naturally
-* 
+* ~sprite cranberry~
+* cool weapons
+* and other stuff I guess
 
 Other Links
 ============
 
-* Todo list: 
+* Todo list: (I'll make that later, unless someone else wants to)
 
 Websites that we use
 ====================
