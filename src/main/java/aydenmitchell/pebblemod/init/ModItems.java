@@ -23,7 +23,7 @@ public class ModItems {
 	
 	//Material
 	public static final ArmorMaterial ARMOR_PEBBLE = EnumHelper.addArmorMaterial("armor_pebble", Reference.MOD_ID + ":pebble", 6, new int[]{1, 2, 3, 1}, 15, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F);
-	public static final ToolMaterial MATERIAL_PEBBLE = EnumHelper.addToolMaterial("material_pebble", 1, 131, 4.0F, 8.0F, 5);
+	public static final ToolMaterial MATERIAL_PEBBLE = EnumHelper.addToolMaterial("material_pebble", 1, 131, 12.0F, 4.0F, 12);
 	
 	//Items
 	public static final Item PEBBLE = new ItemPebble("pebble");
