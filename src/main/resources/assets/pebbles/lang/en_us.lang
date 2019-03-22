@@ -1,5 +1,5 @@
 //Tab
-itemgroup.pebbletab.name=Pebble Mod
+itemGroup.pebbletab=Pebble Mod
 
 //Items
 item.pebble.name=Pebble
