@@ -1,9 +1,12 @@
-# Pebble Mod
+# Pebble Mod (Canceled)
 
-* Discord Server: https://discord.gg/YBhTY5Q
+* Discord Server: https://discord.gg/YBhCY5Q
 * Curseforge Page + Download: not up yet (still developing)
 * Tumblr Development Blog: (maybe later)
 
+
+This was fun as my first time colaborating on a code base, definitly not going anywhere with this anymore lol,
+this was mostly just a test to see what I could make
 
 Pebble mod is a mod that add pebbles and fossils to mincecraft
 
